@@ -1,0 +1,35 @@
+--- 
+title: "用R做社会调查抽样设计"
+author: "蔡苗"
+date: "`r Sys.Date()`"
+output:
+  bookdown::pdf_book:
+    keep_tex: yes
+    dev: "cairo_pdf"
+    latex_engine: xelatex
+    citation_package: natbib
+    template: tex/template_yihui_zh.tex
+    pandoc_args:  --top-level-division=chapter
+    toc_depth: 3
+    toc_unnumbered: no
+    toc_appendix: yes
+    quote_footer: ["\\begin{flushright}", "\\end{flushright}"]
+    includes:
+      in_header: tex/lshort-zh-cn-layout.tex
+documentclass: ctexbook
+bibliography: [bib/bib.bib]
+biblio-style: apalike
+link-citations: yes
+colorlinks: yes
+lot: yes
+lof: yes
+geometry: [b5paper, tmargin=2.5cm, bmargin=2.5cm, lmargin=2.5cm, rmargin=2.5cm]
+site: bookdown::bookdown_site
+description: "用于指导社会科学调查抽样、样本量计算、。"
+github-repo: caimiao0714/SamplingBook
+#cover-image: images/cover.jpg
+---
+
+　　
+
+\mainmatter
