@@ -1,5 +1,30 @@
 # 简单随机抽样
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+**简单随机抽样**（Simple Random Sample, SRS）：总体中的不同单位拥有相同的被抽中几率。
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+
+假设我们能够从均值为$\mu$，方差为$\sigma^2$的总体中不放回抽样得到观测值$y_1, y_2, \dots, y_n$，那么我们可以得到以下关于均数$\mu$的点估计量：
+
+$$\hat{\mu} = \bar{y} = \frac{1}{n}\sum_{i=1}^ny_i$$
+
+并且我们可以得到以下性质：
+
+\[
+E(\hat{\mu}) = \mu\\
+V(\hat{\mu}) = \frac{\sigma^2}{n}\frac{N-n}{N-1}
+\]
+
+第一个性质说明此$\hat{\mu}$为无偏无计量。
+
+我们同时还可以得到关于方差$\sigma^2$的估计量：
+
+$$\hat{\sigma}^2 = s^2 = \frac{1}{n-1}\sum_{i=1}^n(y-\bar{y})^2$$
+
+并且有以下性质：
+
+\[
+E(\sigma^2) = \frac{N}{N-1}\sigma^2\\
+\hat{V}(\hat{\mu}) = \frac{s^2}{n}(1-\frac{n}{N})
+\]
+

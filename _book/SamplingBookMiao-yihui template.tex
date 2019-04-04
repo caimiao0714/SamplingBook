@@ -1,10 +1,6 @@
 \documentclass[]{ctexbook}
 \usepackage{lmodern}
 \usepackage{amssymb,amsmath}
-\PassOptionsToPackage{dvipsnames}{xcolor}
-\RequirePackage{xcolor} % [dvipsnames]
-%\usepackage{xcolor}
-
 \usepackage{ifxetex,ifluatex}
 \usepackage{fixltx2e} % provides \textsubscript
 \ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
@@ -81,7 +77,6 @@
 
 \usepackage{framed,color}
 \definecolor{shadecolor}{RGB}{248,248,248}
-\usepackage{style/MiaoTEX}
 
 \renewcommand{\textfraction}{0.05}
 \renewcommand{\topfraction}{0.8}
@@ -145,7 +140,7 @@
 
 \title{用R语言做社会调查抽样设计}
 \author{蔡苗}
-\date{2019-04-03}
+\date{2019-04-04}
 
 \begin{document}
 \maketitle
@@ -167,13 +162,14 @@ I want to thank my mentor.
 
 \mainmatter
 
-\hypertarget{section}{%
-\chapter{序}\label{section}}
+\hypertarget{preface}{%
+\chapter*{序}\label{preface}}
+
 
 在大多数依赖于社会调查进行研究的学科中，最常见遇到的问题就是应该怎么抽样？在那些地方抽样？每个地方抽多少样本？
 
-\hypertarget{section-1}{%
-\chapter{引言}\label{section-1}}
+\hypertarget{section}{%
+\chapter{引言}\label{section}}
 
 \begin{itemize}
 \item
@@ -207,14 +203,14 @@ I want to thank my mentor.
 
 \begin{figure}
 \centering
-\includegraphics{demo_zh_files/figure-latex/unnamed-chunk-1-1.pdf}
+\includegraphics{SamplingBookMiao_files/figure-latex/unnamed-chunk-1-1.pdf}
 \caption{\label{fig:unnamed-chunk-1}这是一个\textbf{中文标题}。}
 \end{figure}
 
 Note that the \texttt{echo\ =\ FALSE} parameter was added to the code chunk to prevent printing of the R code that generated the plot.
 
-\hypertarget{section-2}{%
-\chapter{简单随机抽样}\label{section-2}}
+\hypertarget{section-1}{%
+\chapter{简单随机抽样}\label{section-1}}
 
 \textbf{简单随机抽样}（Simple Random Sample, SRS）：总体中的不同单位拥有相同的被抽中几率。
 
@@ -242,45 +238,29 @@ E(\sigma^2) = \frac{N}{N-1}\sigma^2\\
 \hat{V}(\hat{\mu}) = \frac{s^2}{n}(1-\frac{n}{N})
 \]
 
+\hypertarget{section-2}{%
+\chapter{分层抽样}\label{section-2}}
+
 \hypertarget{section-3}{%
-\chapter{分层抽样}\label{section-3}}
+\chapter{比例数据和回归}\label{section-3}}
 
 \hypertarget{section-4}{%
-\chapter{比例数据和回归}\label{section-4}}
+\section{比例数据}\label{section-4}}
 
 \hypertarget{section-5}{%
-\section{比例数据}\label{section-5}}
+\section{回归}\label{section-5}}
 
 \hypertarget{section-6}{%
-\section{回归}\label{section-6}}
+\chapter{聚类抽样}\label{section-6}}
 
-\hypertarget{r-markdown}{%
-\chapter{R Markdown}\label{r-markdown}}
+\hypertarget{section-7}{%
+\chapter{非均等概率抽样}\label{section-7}}
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see \url{http://rmarkdown.rstudio.com}.
+\hypertarget{section-8}{%
+\chapter{大型复杂社会调查}\label{section-8}}
 
-When you click the \textbf{Knit} button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
-
-\hypertarget{r-markdown-1}{%
-\chapter{R Markdown}\label{r-markdown-1}}
-
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see \url{http://rmarkdown.rstudio.com}.
-
-When you click the \textbf{Knit} button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
-
-\hypertarget{r-markdown-2}{%
-\chapter{R Markdown}\label{r-markdown-2}}
-
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see \url{http://rmarkdown.rstudio.com}.
-
-When you click the \textbf{Knit} button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
-
-\hypertarget{r-markdown-3}{%
-\chapter{R Markdown}\label{r-markdown-3}}
-
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see \url{http://rmarkdown.rstudio.com}.
-
-When you click the \textbf{Knit} button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+\hypertarget{section-9}{%
+\chapter{调查对象拒绝回答}\label{section-9}}
 
 \bibliography{bib/bib.bib}
 

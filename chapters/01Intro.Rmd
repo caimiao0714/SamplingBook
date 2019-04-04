@@ -1,16 +1,21 @@
 # 引言
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+- **总体** - 参数（parameter）：研究者想要知道但是无法知道的总体特征，比如全国男性平均身高，
+- **样本** - 统计量（statistic）：研究者可以通过抽样进行实际计算的样本特征，比如全国普查男性平均身高。
 
-```{r }
-summary(cars)
-```
+- **无限总体**： 总体的量非常大，我们可以假设我们抽出来的每个观察值都是独立同分布的。
+- **有限总体**： 总体的量不大，我们抽出来的样本并不独立，但是同分布。
 
-## Including Plots
+假设我们要研究某大学社会学系总共30个班级本科学生的四级考试平均成绩，此时总体可能无法看做是无限总体。
+这是因为总共30个班级人数较少，并且不同年级同学四级考试成绩可能会存在系统差异，因此此总体看做是有限总体比较合理。
+假设我们要研究某小池塘中的平均汞浓度，我们可以从池塘的不同边缘抽出10小杯样本水，然后检测每个样本中汞浓度。
+在此例子中，我们可以假设总体为无限总体，因为小池塘中的汞浓度相对均匀，并且抽取10小杯水并不会对总体池塘的水有太大影响。
 
-You can also embed plots, for example:
+- **简单随机抽样**\index{简单随机抽样}
+- **分层抽样**\index{分层抽样}
+- **聚类抽样**\index{聚类抽样}
+- **系统抽样**\index{系统抽样}
 
 (ref:foo) 这是一个**中文标题**。
 

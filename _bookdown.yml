@@ -1,4 +1,4 @@
-book_filename: demo_zh
+book_filename: SamplingBookMiao
 rmd_subdir: ["chapters/"]
 delete_merged_file: true
 language:

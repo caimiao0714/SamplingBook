@@ -1,0 +1,12 @@
+\contentsline {chapter}{序}{xi}{chapter*.5}
+\contentsline {chapter}{\numberline {第一章\hspace {.3em}}引言}{1}{chapter.1}
+\contentsline {chapter}{\numberline {第二章\hspace {.3em}}简单随机抽样}{3}{chapter.2}
+\contentsline {chapter}{\numberline {第三章\hspace {.3em}}分层抽样}{5}{chapter.3}
+\contentsline {chapter}{\numberline {第四章\hspace {.3em}}比例数据和回归}{7}{chapter.4}
+\contentsline {section}{\numberline {4.1}比例数据}{7}{section.4.1}
+\contentsline {section}{\numberline {4.2}回归}{7}{section.4.2}
+\contentsline {chapter}{\numberline {第五章\hspace {.3em}}聚类抽样}{9}{chapter.5}
+\contentsline {chapter}{\numberline {第六章\hspace {.3em}}非均等概率抽样}{11}{chapter.6}
+\contentsline {chapter}{\numberline {第七章\hspace {.3em}}大型复杂社会调查}{13}{chapter.7}
+\contentsline {chapter}{\numberline {第八章\hspace {.3em}}调查对象拒绝回答}{15}{chapter.8}
+\contentsline {chapter}{索引}{17}{chapter*.7}
